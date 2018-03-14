@@ -37,7 +37,7 @@
                 switch (arg){
                     case '/platform' : this.platformNav = true;break;
                     case '/blockChain' : this.blockChainNav = true;break;
-                    case '/bass' : this.baasNav = true;break;
+                    case '/baas' : this.baasNav = true;break;
                 }
                 this.$router.push({ path: arg })
             }
