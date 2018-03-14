@@ -1270,6 +1270,39 @@
 </script>
 
 <style lang="scss" scoped>
+    // 箭头动画
+    @keyframes arrowAnimate {
+        from {
+            background-position-y: -108px;
+        }
+        to {
+            background-position-y: 108px;
+        }
+    }
+    @-moz-keyframes arrowAnimate {
+        from {
+            background-position-y: -108px;
+        }
+        to {
+            background-position-y: 108px;
+        }
+    }
+    @-webkit-keyframes arrowAnimate {
+        from {
+            background-position-y: -108px;
+        }
+        to {
+            background-position-y: 108px;
+        }
+    }
+    @-o-keyframes arrowAnimate {
+        from {
+            background-position-y: -108px;
+        }
+        to {
+            background-position-y: 108px;
+        }
+    }
     #baas{
         .content_left{
             width: 966px;
@@ -1313,6 +1346,10 @@
                         width: 20%;
                         height: 108px;
                         background: url('../assets/industry_arrow.png') no-repeat center;
+                        animation: arrowAnimate 4s linear 0s infinite normal;
+                        -moz-animation: arrowAnimate 4s linear 0s infinite normal;	/* Firefox */
+                        -webkit-animation: arrowAnimate 4s linear 0s infinite normal;	/* Safari 和 Chrome */
+                        -o-animation: arrowAnimate 4s linear 0s infinite normal;
                     }
                 }
                 h1{
